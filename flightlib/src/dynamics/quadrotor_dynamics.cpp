@@ -2,13 +2,16 @@
 
 namespace flightlib {
 
+//TODO: change dynamics
 QuadrotorDynamics::QuadrotorDynamics(const Scalar mass, const Scalar arm_l)
   : mass_(mass),
     arm_l_(arm_l),
     t_BM_(
       arm_l * sqrt(0.5) *
       (Matrix<3, 4>() << 1, -1, -1, 1, -1, -1, 1, 1, 0, 0, 0, 0).finished()),
-    J_(mass / 12.0 * arm_l * arm_l * Vector<3>(4.5, 4.5, 7).asDiagonal()),
+    // J_(mass / 12.0 * arm_l * arm_l * Vector<3>(4.5, 4.5, 7).asDiagonal()),
+    //TODO: edited MoI matrix
+    J_(Vector<3>(0.438e-7, 0.438e-7, 0.438e-7).asDiagonal()),
     J_inv_(J_.inverse()),
     motor_omega_min_(150.0),
     motor_omega_max_(2000.0),
