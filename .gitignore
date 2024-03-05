@@ -19,3 +19,10 @@ _build/
 _posts
 _site
 
+catkin_simple/
+eigen_catkin/
+mav_comm/
+rotors_simulator/
+rpg_quadrotor_common/
+rpg_quadrotor_control/
+rpg_single_board_io/
