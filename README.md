@@ -1,6 +1,6 @@
-flightmare edit
+# flightmare edit
 
-To set up Docker container for ROS+Flightros Packages Install:
+### To set up Docker container for ROS+Flightros Packages Install:
 
 1. Change mounts in docker-compose.yml file to link flightsim install path to home folder in container (/path/to/flightsim:/home/user/fm/flightmare)
 
