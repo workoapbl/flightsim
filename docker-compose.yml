@@ -9,6 +9,7 @@ services:
     volumes:
       - /home/penguin/fm/flightmare:/home/user/fm/flightmare
       - /etc/hosts:/etc/hosts
+      - /tmp/.X11-unix:/tmp/.X11-unix
     network_mode: host
     tty: true
     container_name: ros_fm
