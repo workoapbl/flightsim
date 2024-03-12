@@ -1,7 +1,7 @@
 version: '3'
 services:
   ros_container:
-    image: ros_flightsim:0.6
+    image: ros_flightsim:0.7
     ports:
       - "8080:3000"
     environment:
