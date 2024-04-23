@@ -8,7 +8,7 @@
 
 ```
 cd /path_of_dockerfile
-docker build -t ros_flightsim:0.7 . #builds image named as ros_flightsim:0.6
+docker build -t ros_flightsim:0.7 . #builds image named as ros_flightsim:0.7
 docker-compose up #creates docker compose
 
 #in separate terminal
